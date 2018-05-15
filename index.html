@@ -23,6 +23,12 @@
 			font-family: GothamBookRegular;
 			src: url('fonts/GothamBookRegular.otf');
 		}
+	
+		
+		body + .container{
+			padding:0;
+			box-shadow:#484623;
+		}
 
 		body, p, * {
 			font-family: GothamBookRegular;  
@@ -57,18 +63,24 @@
 			src: url('fonts/GothamBold.otf');
 		}
 
-		.navbar{
-			border-bottom: 2px solid black;
+		.bg-light {
+			background-color: white!important;
+			border-color: white;
+		}
+		
+		.jumbotron{
+			border: 2px solid #2c2b05;
 		}
       	.bright-yellow-bkg{
-      		background-color: #fcfbe3;
-      		border-top: 10px solid #ffe052;
-      		border-bottom:10px solid #ffe052;
-      		color: #2c2b05;
+			background-color: #fcfbe3;
+			border: 2px solid #2c2b05;
+			padding: 12px 0;
+			margin-bottom: 40px;
       	}
       	.display-1, h1{
       		font-size:72px;
       		font-weight: lighter;
+      		text-transform: uppercase;
       	}
       	.display-2, h2{
       		font-size:42px;
@@ -92,13 +104,15 @@
 
       </style>
    <body>
+   <div class="container">
       <!--Courtbot Branding: https://github.com/codefortulsa/courtbot-branding -->
       <!--Logo-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container">
             <a class="navbar-brand" href="#">
-            <img class="img-responsive img-center" src="images/logo-no-border.png" style="width:150px;margin-right:10px;">
+            <img class="img-responsive img-center" src="images/logo-no-border.png" style="width:180px;margin-right:10px;">
             </a>
+            <span>Never forget a court date!</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -117,9 +131,9 @@
             </div>
          </div>
       </nav>
-      <div class="jumbotron bright-yellow-bkg"">
+      <div class="jumbotron">
          <div class="container text-center">
-            <h1 class="display-1">Get Court Date Reminders</h1>
+            <h1 class="display-1 bright-yellow-bkg">Get Court Date Reminders</h1>
             <p class="display-2">Text your OSCN Case Number:</p>
             <div class="row">
                <div class="col-sm-4 display-3">Muskogee County</br><a class="btn btn-lg btn-yellow" href="sms:9186080060">(918)-608-0060</a></div>
@@ -190,5 +204,6 @@
          <h4>Join us on Facebook for News and Updates</h4>
          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=121&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId" width="121" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
       </footer>
+      </div>
    </body>
 </html>
