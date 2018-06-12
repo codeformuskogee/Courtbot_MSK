@@ -1,73 +1,186 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>CourtBot</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fonts/GothamBookRegular.otf">
-    <meta charset="UTF-8">
-    <meta name="description" content="friendly neighborhood court robot for getting court case information">
-    <meta name="author" content="Code for Tulsa">
-</head>
+   <head>
+      <title>Free Oklahoma Courtdate Notifications</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <link rel="stylesheet" href="css/fonts/GothamBookRegular.otf">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <meta name="description" content="friendly neighborhood court robot for getting court case information">
+      <meta name="author" content="Code for Tulsa">
+   </head>
+   <!--
+      To do:  *Feel free to make any changes you want, fix any errors, add items to the to do list, etc.; We are all collaborating on this together!
+              *Style guide: https://github.com/codefortulsa/courtbot-branding/blob/master/README.md
+              *Add logos to footer plus whatever else we want to add
+              *Contact us buttons - 1) if want to deploy CourtBot in your county, 2) if you have questions, other action items?
+              *Format fonts and colors
+              *Squeezed the content, now will not center.  Fixed? Check css container and container-fluid
+              
+      -->
+      <style>
+      	@font-face {
+			font-family: GothamBookRegular;
+			src: url('fonts/GothamBookRegular.otf');
+		}
 
-<!--
-To do:  *Feel free to make any changes you want, fix any errors, add items to the to do list, etc.; We are all collaborating on this together!
-        *Style guide: https://github.com/codefortulsa/courtbot-branding/blob/master/README.md
-        *Add logos to footer plus whatever else we want to add
-        *Contact us buttons - 1) if want to deploy CourtBot in your county, 2) if you have questions, other action items?
-        *Format fonts and colors
-        *Squeezed the content, now will not center.  Fixed? Check css container and container-fluid
-        
--->
+		body, p, * {
+			font-family: GothamBookRegular;  
+			color: #302f09;
+		}
+		
+		.center{
+			text-align:center;
+		}
+		
+		strong, .dark{
+			color: #484623;
+		}
+		
+		.uppercase{
+			text-transform: uppercase;
+		}
+		.btn-yellow{
+			color:#2c2b05;
+			background-color:#ffe052;
+		}
+		.btn-gold{
+			color:#fcfbe3;
+			background-color:#766b22;
+		}
+		section{
+			padding: 60px 0;
+		}
 
-<body>
-    
-    <!--Courtbot Branding: https://github.com/codefortulsa/courtbot-branding -->
-    
-    <!--Logo-->
-    <div class="container text-center" id="topLogo">
-        <img class="img-responsive img-center" src="images/COURTBOT.png">
-    </div>
-    <!--Banner made of business card images with how to use info-->
-    <div class="container-fluid text-center">
-        <img class="img-responsive" src="images/CourtbotBannerr.png">
-    </div>
-    
-    <!--What is CourtBot-->
-    <div class="container-fluid text-center CBLtBgClr" id="whatIsCourtBot">
-        <h2>What is CourtBot?</h2>
-        <p>PTA meetings, doctor's appointments, even court dates when life gets hectic, reminders help. COURTBOT is a text-message app that helps keep everything on track. After cases are booked, clients can text their case number to COURTBOT to receive automatic reminders of court dates.</p>
-        
-    </div>
-    
-    <!--Why CourtBot-->
-    <div class="container-fluid text-center" id="whyCourtBot">
-        <h2>Why CourtBot?</h2>
-        <h4>LESS BUREAUCRACY</h4>
-        <p>Around 25% of the people in Tulsa County Jail are waiting for their cases to be heard, costing taxpayers up to $25,000 per day. Research shows that reminders work. More small fines are collected, and jail space is freed for more serious offenders.</p>
-        <h4>FEWER FINES</h4>
-        <p>Failure-to-appear and failure-to-pay fines can quickly snowball, especially for those living paycheck-to-paycheck. CourtBot helps clients avoid mistakes that burden them and the criminal justice system. Government done well can help.</p>
-    </div>
-    
-    <!--Join Today-->
-    <div class="container-fluid text-center CBLtBgClr" id="joinToday">
-        <h2>Join Today</h2>
-        <p>Current participants include:
-            <ul>
-                <li>Muskogee County</li> 
-                <li>Rogers County</li> 
-                <li>Tulsa County</li>
-            </ul>
-        </p>
-        <p>We'd love to hear from you at INFO@CODEFORTULSA.ORG or OKCOURTBOT.COM.</p> 
-        
+		@font-face {
+			font-family: GothamBold;
+			src: url('fonts/GothamBold.otf');
+		}
 
-    </div>
-    <!--Footer-->
-    <footer class="container-fluid text-center" id="footer">
-        <h4>Join us on Facebook for News and Updates</h4>
-        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=121&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId" width="121" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-    
-    </footer>
-</body>
-</html> 
+		.navbar{
+			border-bottom: 2px solid black;
+		}
+      	.bright-yellow-bkg{
+      		background-color: #fcfbe3;
+      		border-top: 10px solid #ffe052;
+      		border-bottom:10px solid #ffe052;
+      		color: #2c2b05;
+      	}
+      	.display-1, h1{
+      		font-size:72px;
+      		font-weight: lighter;
+      	}
+      	.display-2, h2{
+      		font-size:42px;
+      		font-family:GothamBold;
+      	}
+      	.display-3, h3{
+      		font-size:32px;
+      		font-weight: lighter;
+      	}
+      	.display-4, h4{
+      		font-size:24px;
+      		font-family:GothamBold;
+      	}
+      	.display-4{
+      		font-size:22px;
+      		font-weight:lighter;
+      	}
+      	.CBLtBgClr {
+			background-color: #F6F3DD;
+		}
+        
+      </style>
+   <body>
+      <!--Courtbot Branding: https://github.com/codefortulsa/courtbot-branding -->
+      <!--Logo-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+            <img class="img-responsive img-center" src="images/logo-no-border.png" style="width:150px;margin-right:10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="jumbotron bright-yellow-bkg">
+         <div class="container text-center">
+            <h1 class="display-1">Get Court Date Reminders</h1>
+            <p class="display-2">Text your OSCN Case Number:</p>
+            <div class="row">
+               <div class="col-sm-4 display-3">Muskogee County<br/><a class="btn btn-lg btn-yellow" style="font-size:20px" href="sms:9186080060">(918)-608-0060</a></div>
+               <div class="col-sm-4 display-3">Rogers County<br/><a class="btn btn-lg btn-yellow" style="font-size:20px" href="sms:9182059352">(918)-205-9352</a></div>
+               <div class="col-sm-4 display-3">Tulsa County<br/><a class="btn btn-lg btn-yellow" style="font-size:20px" href="sms:9189923222">(918)-992-3222</a></div>
+            </div>
+            <p class="Lead">
+            	County is based on the county of your court case. 
+            </p>
+            <p class="lead">Need more help?</p>
+            <a href="">See our FAQ</a>
+         </div>
+      </div>
+      <!--What is CourtBot-->
+      <section>
+		  <div class="container text-center" id="whatIsCourtBot">
+			 <h2>What is CourtBot?</h2>
+			 <p class="lead">PTA meetings, doctor's appointments, even court dates when life gets hectic, reminders help. COURTBOT is a text-message app that helps keep everything on track. After cases are booked, clients can text their case number to COURTBOT to receive automatic reminders of court dates.</p>
+		  </div>
+      </section>
+      <!--Why CourtBot-->
+      <section class="CBLtBgClr">
+		  <div class="container text-center" id="whyCourtBot">
+			 <h2>Why CourtBot?</h2>
+			 <h4>LESS BUREAUCRACY</h4>
+			 <p class="lead">Around 25% of the people in Tulsa County Jail are waiting for their cases to be heard, costing taxpayers up to $25,000 per day. Research shows that reminders work. More small fines are collected, and jail space is freed for more serious offenders.</p>
+			 <h4>FEWER FINES</h4>
+			 <p class="lead">Failure-to-appear and failure-to-pay fines can quickly snowball, especially for those living paycheck-to-paycheck. CourtBot helps clients avoid mistakes that burden them and the criminal justice system. Government done well can help.</p>
+		  </div>
+		</section>
+       <section>
+		  <div class="container">
+			 <h2 class="center">Frequently Asked Questions</h2>
+			 <div class="row">
+				<div class="col-sm-6">
+				   <h4>1. How do I know my OSCN Case Number?</h4>
+				   <p>It starts with CF, CM, CRF or CRM and has two dashes.</p>
+				</div>
+				<div class="col-sm-6">
+				   <h4>2. What if I still can't find my case number?</h4>
+				   <p>Check with your public defender or search your name online at <a href=“www.oscn.net/docets/search.aspx”>www.oscn.net/docets/search.aspx</a></p>
+				</div>
+			 </div>
+        </section>
+      <!--Credits-->
+        <section class="CBLtBgClr">
+      	     <div class="container text-center">
+      		    <h3>Brought to you by Code for Tulsa</h3>
+      	     </div>
+        </section>
+      <!--Footer-->
+      <footer class="container-fluid text-center" id="footer">
+         <h4>Join us on Facebook for News and Updates</h4>
+         <div class="row">
+          <div class="col-sm-12">
+             <a href="https://www.facebook.com/MuskogeeCountyCourtBot/"><i class="fab fa-facebook-square" style="font-size:3em; color:#3B5998"></i></a>
+             <a href="https://twitter.com/CodeforMuskogee"><i class="fab fa-twitter-square" style="font-size:3em; color:#08a0e9"></i></a>
+          </div>
+         </div>
+        
+      </footer>
+   </body>
+</html>
