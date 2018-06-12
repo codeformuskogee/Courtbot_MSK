@@ -1,0 +1,26 @@
+{
+  "name": "courtbot_msk",
+  "version": "1.0.0",
+  "description": "Courtbot Application and frontend website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeformuskogee/Courtbot_MSK.git"
+  },
+  "keywords": [
+    "Courtbot"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeformuskogee/Courtbot_MSK/issues"
+  },
+  "homepage": "https://github.com/codeformuskogee/Courtbot_MSK#readme"
+}
