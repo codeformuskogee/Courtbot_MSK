@@ -2,7 +2,7 @@
   "name": "courtbot_msk",
   "version": "1.0.0",
   "description": "Courtbot Application and frontend website",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "express": "^4.16.3"
   },
