@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% include ../partials/header.ejs %>
+  <title>CourtBot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts/GothamBookRegular.otf">
+  <meta charset="UTF-8">
+  <meta name="description" content="friendly neighborhood court robot for getting court case information">
+  <meta name="author" content="Code for Tulsa">
 </head>
+
+<!--
+To do:  *Feel free to make any changes you want, fix any errors, add items to the to do list, etc.; We are all collaborating on this together!
+        *Style guide: https://github.com/codefortulsa/courtbot-branding/blob/master/README.md
+        *Add logos to footer plus whatever else we want to add
+        *Contact us buttons - 1) if want to deploy CourtBot in your county, 2) if you have questions, other action items?
+        *Format fonts and colors
+        *Squeezed the content, now will not center.  Fixed? Check css container and container-fluid
+
+-->
 
 <body>
 
-  <% include ../partials/nav.ejs %>
+<!--Courtbot Branding: https://github.com/codefortulsa/courtbot-branding -->
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Node on Heroku</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started with Node</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
+<!--Logo-->
+<div class="container text-center" id="topLogo">
+  <img class="img-responsive img-center" src="images/COURTBOT.png">
 </div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
+<!--Banner made of business card images with how to use info-->
+<div class="container-fluid text-center">
+  <img class="img-responsive" src="images/CourtbotBannerr.png">
 </div>
 
+<!--What is CourtBot-->
+<div class="container-fluid text-center CBLtBgClr" id="whatIsCourtBot">
+  <h2>What is CourtBot?</h2>
+  <p>PTA meetings, doctor's appointments, even court dates when life gets hectic, reminders help. COURTBOT is a text-message app that helps keep everything on track. After cases are booked, clients can text their case number to COURTBOT to receive automatic reminders of court dates.</p>
 
+</div>
+
+<!--Why CourtBot-->
+<div class="container-fluid text-center" id="whyCourtBot">
+  <h2>Why CourtBot?</h2>
+  <h4>LESS BUREAUCRACY</h4>
+  <p>Around 25% of the people in Tulsa County Jail are waiting for their cases to be heard, costing taxpayers up to $25,000 per day. Research shows that reminders work. More small fines are collected, and jail space is freed for more serious offenders.</p>
+  <h4>FEWER FINES</h4>
+  <p>Failure-to-appear and failure-to-pay fines can quickly snowball, especially for those living paycheck-to-paycheck. CourtBot helps clients avoid mistakes that burden them and the criminal justice system. Government done well can help.</p>
+</div>
+
+<!--Join Today-->
+<div class="container-fluid text-center CBLtBgClr" id="joinToday">
+  <h2>Join Today</h2>
+  <p>Current participants include:
+  <ul>
+    <li>Muskogee County</li>
+    <li>Rogers County</li>
+    <li>Tulsa County</li>
+  </ul>
+  </p>
+  <p>We'd love to hear from you at INFO@CODEFORTULSA.ORG or OKCOURTBOT.COM.</p>
+
+
+</div>
+<!--Footer-->
+<footer class="container-fluid text-center" id="footer">
+  <h4>Join us on Facebook for News and Updates</h4>
+  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=121&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId" width="121" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+</footer>
 </body>
 </html>

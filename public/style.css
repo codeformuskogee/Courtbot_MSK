@@ -1,0 +1,76 @@
+.CBLtBgClr {
+    background-color: #F6F3DD;
+}
+
+body {
+    /*padding-left: 15em;
+    padding-right: 15em;*/
+    /*max-width: 900px;
+   min-width: 480px;
+    margin: 0 auto;*/
+}
+
+/* Container and container-fluid to constrain the page without breaking.  
+   Max width is arbitrary, so its not spread end to end on screen. Min-width
+   Seem to be standard smallest width of a mobile device, at least that I've 
+   found.
+*/
+.container {
+    max-width: 900px;
+   min-width: 480px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 900px;
+   min-width: 480px;
+    margin: 0 auto;
+}
+
+#topLogo {
+    max-width: 900px;
+    min-width: 480px;
+    margin: 0 auto;
+    /*padding-left: 15em;
+    padding-right: 15em; */
+}
+
+#joinToday ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+     
+}
+
+@font-face {
+    font-family: GothamBookRegular;
+    src: url('fonts/GothamBookRegular.otf');
+}
+
+p {
+    font-family: GothamBookRegular;  
+    padding-bottom: 15px;
+}
+
+@font-face {
+    font-family: GothamBold2;
+    src: url('fonts/GothamBold.otf');
+}
+
+h2 {
+    font-family: GothamBold;
+}
+
+#whatIsCourtBot p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#whyCourtBot p {
+     max-width: 700px;
+    margin: 0 auto;
+}
+
+img {
+    max-width:100%;
+    height: auto;
