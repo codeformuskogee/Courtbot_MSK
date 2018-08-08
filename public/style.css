@@ -1,0 +1,33 @@
+.CBLtBgClr {
+    background-color: #F6F3DD;
+}
+
+/* Container and container-fluid to constrain the page without breaking.
+   Max width is arbitrary, so its not spread end to end on screen. Min-width
+   Seem to be standard smallest width of a mobile device, at least that I've
+   found.
+*/
+
+@font-face {
+    font-family: GothamBookRegular;
+    src: url('fonts/GothamBookRegular.otf');
+}
+
+p {
+    font-family: GothamBookRegular;
+    padding-bottom: 15px;
+}
+
+@font-face {
+    font-family: GothamBold2;
+    src: url('fonts/GothamBold.otf');
+}
+
+h2 {
+    font-family: GothamBold;
+}
+
+.facebook {
+    font-size: 5em;
+    color: #3B5998;
+}
