@@ -3,7 +3,8 @@
 <head>
   <title>Free Oklahoma Courtdate Notifications</title>
   <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">  <link rel="stylesheet" href="css/fonts/GothamBookRegular.otf">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/fonts/GothamBookRegular.otf">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta name="description" content="friendly neighborhood court robot for getting court case information">
@@ -65,7 +66,10 @@
   .bright-yellow-bkg{
     background-color: #fcfbe3;
     border-top: 10px solid #ffe052;
-    border-bottom:10px solid #ffe052;
+    border-bottom:10px solid #ffe052;<div class="col-sm-6">
+        <h4>5. Can other people be reminded of my court date?</h4>
+        <p>Anyone with your case number will be able to use courtbot to keep track of your court date.</p>
+      </div>
     color: #2c2b05;
   }
   .display-1, h1{
@@ -74,7 +78,10 @@
   }
   .display-2, h2{
     font-size:42px;
-    font-family:GothamBold;
+    font-family:GothamBold;<div class="col-sm-6">
+        <h4>5. Can other people be reminded of my court date?</h4>
+        <p>Anyone with your case number will be able to use courtbot to keep track of your court date.</p>
+      </div>
   }
   .display-3, h3{
     font-size:32px;
@@ -114,12 +121,13 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+      <!--  <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">Disabled</a>
         </li>
+      -->
       </ul>
     </div>
   </div>
@@ -137,29 +145,37 @@
       County is based on the county of your court case.
     </p>
     <p class="lead">Need more help?</p>
-    <a href="">See our FAQ</a>
+    <a href="#faq">See our FAQ</a>
   </div>
 </div>
 <!--What is CourtBot-->
 <section>
   <div class="container text-center" id="whatIsCourtBot">
-    <h2>What is CourtBot?</h2>
-    <p class="lead">PTA meetings, doctor's appointments, even court dates when life gets hectic, reminders help. COURTBOT is a text-message app that helps keep everything on track. After cases are booked, clients can text their case number to COURTBOT to receive automatic reminders of court dates.</p>
+    <main>
+      <h2>What is CourtBot?</h2>
+      <p class="lead">COURTBOT is a text-message app that helps keep everything on track.  After cases are booked, clients can text their case number to COURTBOT to receive automatic reminders of court dates.  Research shows that reminders work.</p>
+    </main>
   </div>
 </section>
 <!--Why CourtBot-->
 <section class="CBLtBgClr">
   <div class="container text-center" id="whyCourtBot">
-    <h2>Why CourtBot?</h2>
-    <h4>LESS BUREAUCRACY</h4>
-    <p class="lead">Around 25% of the people in Tulsa County Jail are waiting for their cases to be heard, costing taxpayers up to $25,000 per day. Research shows that reminders work. More small fines are collected, and jail space is freed for more serious offenders.</p>
-    <h4>FEWER FINES</h4>
-    <p class="lead">Failure-to-appear and failure-to-pay fines can quickly snowball, especially for those living paycheck-to-paycheck. CourtBot helps clients avoid mistakes that burden them and the criminal justice system. Government done well can help.</p>
+    <article>
+      <h2>Why CourtBot?</h2>
+      <h4>LESS BUREAUCRACY</h4>
+      <p class="lead">Around 25% of the people in Tulsa County Jail are waiting for their cases to be heard, costing taxpayers up to $25,000 per day.  When clients attend their court cases, more small fines are collected, and jail space is freed for more serious offenders.  Remembering to attend court can help break the cycle of fines and jail time.
+      </p>
+    </article>
+    <article>
+      <h4>FEWER FINES</h4>
+      <p class="lead">Failure-to-appear and failure-to-pay fines can quickly snowball, especially for those living paycheck-to-paycheck. CourtBot helps clients avoid mistakes that burden them and the criminal justice system. Government done well can help.</p>
+    </article>
   </div>
 </section>
+<!--FAQs-->
 <section>
   <div class="container">
-    <h2 class="center">Frequently Asked Questions</h2>
+    <h2 class="center" id="faq">Frequently Asked Questions</h2>
     <div class="row">
       <div class="col-sm-6">
         <h4>1. How do I know my OSCN Case Number?</h4>
@@ -169,6 +185,23 @@
         <h4>2. What if I still can't find my case number?</h4>
         <p>Check with your public defender or search your name online at <a href=“www.oscn.net/docets/search.aspx”>www.oscn.net/docets/search.aspx</a></p>
       </div>
+      <div class="col-sm-6">
+        <h4>3. Can other people be reminded of my court date?</h4>
+        <p>Anyone with your case number will be able to use courtbot to keep track of your court date.</p>
+      </div>
+      <div class="col-sm-6">
+        <h4>4. How will my information be used?</h4>
+        <p>Your case information will be pulled into Courtbot's database to be used as a reference for your reminders</p>
+      </div>
+        <div class="col-sm-6">
+        <h4>5. When will I be reminded of my court case?</h4>
+        <p>Currently, a notification will be sent the day before you case.</p>
+      </div>
+      <div class="col-sm-6">
+        <h4>6. How often will I be reminded?</h4>
+        <p>Currently, you will only be reminded once.</p>
+      </div>
+  
     </div>
 </section>
 <!--Credits-->
@@ -179,7 +212,7 @@
 </section>
 <!--Footer-->
 <footer class="container-fluid text-center" id="footer">
-  <h4>Join us on Facebook for News and Updates</h4>
+  <h4>Join us on Facebook and Twitter for news and updates</h4>
   <div class="row">
     <div class="col-sm-12">
       <a href="https://www.facebook.com/MuskogeeCountyCourtBot/"><i class="fab fa-facebook-square" style="font-size:3em; color:#3B5998"></i></a>
