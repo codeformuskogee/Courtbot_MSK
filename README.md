@@ -13,6 +13,7 @@ All css, images, etc, are in the **public** directory
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
 ```sh
+$ cd /path/to/your/Courtbot_MSK
 $ npm install
 $ npm start
 ```
