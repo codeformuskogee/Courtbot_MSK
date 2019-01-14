@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Free Oklahoma Courtdate Notifications</title>
   <link rel="stylesheet" href="/style.css">
@@ -9,6 +9,87 @@
   <meta charset="UTF-8">
   <meta name="description" content="friendly neighborhood court robot for getting court case information">
   <meta name="author" content="Code for Tulsa">
+  <style>
+    @font-face {
+      font-family: GothamBookRegular;
+      src: url('fonts/GothamBookRegular.otf');
+    }
+    body, p, * {
+      font-family: GothamBookRegular;
+      color: #302f09;
+    }
+
+    .center{
+      text-align:center;
+    }
+
+    strong, .dark{
+      color: #484623;
+    }
+
+    .jumbotron .btn{
+      margin-top:15px;
+      margin-bottom:15px;
+    }
+
+    .uppercase{
+      text-transform: uppercase;
+    }
+    .btn-yellow{
+      color:#2c2b05;
+      background-color:#ffe052;
+    }
+    .btn-gold{
+      color:#fcfbe3;
+      background-color:#766b22;
+    }
+    section{
+      padding: 60px 0;
+    }
+    @font-face {
+      font-family: GothamBold;
+      src: url('fonts/GothamBold.otf');
+    }
+    .navbar{
+      border-bottom: 2px solid black;
+    }
+    .bright-yellow-bkg{
+      background-color: #fcfbe3;
+      border-top: 10px solid #ffe052;
+      border-bottom:10px solid #ffe052;
+      color: #2c2b05;
+    }
+    .display-1, h1{
+      font-size:72px;
+      font-weight: lighter;
+    }
+    .display-2, h2{
+      font-size:42px;
+      font-family:GothamBold;
+
+          }
+    .display-3, h3{
+      font-size:32px;
+      font-weight: lighter;
+    }
+    .display-4, h4{
+      font-size:24px;
+      font-family:GothamBold;
+    }
+    .display-4{
+      font-size:22px;
+      font-weight:lighter;
+    }
+    .lead{
+      max-width:900px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .CBLtBgClr {
+      background-color: #F6F3DD;
+    }
+
+  </style>
 </head>
 <!--
    To do:  *Feel free to make any changes you want, fix any errors, add items to the to do list, etc.; We are all collaborating on this together!
@@ -17,94 +98,13 @@
            *Contact us buttons - 1) if want to deploy CourtBot in your county, 2) if you have questions, other action items?
            *Format fonts and colors
    -->
-<style>
-  @font-face {
-    font-family: GothamBookRegular;
-    src: url('fonts/GothamBookRegular.otf');
-  }
-  body, p, * {
-    font-family: GothamBookRegular;
-    color: #302f09;
-  }
-
-  .center{
-    text-align:center;
-  }
-
-  strong, .dark{
-    color: #484623;
-  }
-
-  .jumbotron .btn{
-    margin-top:15px;
-    margin-bottom:15px;
-  }
-
-  .uppercase{
-    text-transform: uppercase;
-  }
-  .btn-yellow{
-    color:#2c2b05;
-    background-color:#ffe052;
-  }
-  .btn-gold{
-    color:#fcfbe3;
-    background-color:#766b22;
-  }
-  section{
-    padding: 60px 0;
-  }
-  @font-face {
-    font-family: GothamBold;
-    src: url('fonts/GothamBold.otf');
-  }
-  .navbar{
-    border-bottom: 2px solid black;
-  }
-  .bright-yellow-bkg{
-    background-color: #fcfbe3;
-    border-top: 10px solid #ffe052;
-    border-bottom:10px solid #ffe052;<div class="col-sm-6">
-    color: #2c2b05;
-  }
-  .display-1, h1{
-    font-size:72px;
-    font-weight: lighter;
-  }
-  .display-2, h2{
-    font-size:42px;
-    font-family:GothamBold;<div class="col-sm-6">
-
-        }
-  .display-3, h3{
-    font-size:32px;
-    font-weight: lighter;
-  }
-  .display-4, h4{
-    font-size:24px;
-    font-family:GothamBold;
-  }
-  .display-4{
-    font-size:22px;
-    font-weight:lighter;
-  }
-  .lead{
-    max-width:900px;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .CBLtBgClr {
-    background-color: #F6F3DD;
-  }
-
-</style>
 <body>
 <!--Courtbot Branding: https://github.com/codefortulsa/courtbot-branding -->
 <!--Logo-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img class="img-responsive img-center" src="images/logo-no-border.png" style="width:150px;margin-right:10px;">
+      <img class="img-responsive img-center" src="images/logo-no-border.png" alt="Logo, no border" style="width:150px;margin-right:10px;">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -142,19 +142,20 @@
   </div>
 </div>
 <!--What is CourtBot-->
-<section>
+
   <div class="container text-center" id="whatIsCourtBot">
     <main>
       <h2>What is CourtBot?</h2>
       <p class="lead">COURTBOT is a text-message app that helps keep everything on track.  After cases are booked, clients can text their case number to COURTBOT to receive automatic reminders of court dates.  Research shows that reminders work.</p>
     </main>
   </div>
-</section>
+
 <!--Why CourtBot-->
 <section class="CBLtBgClr">
   <div class="container text-center" id="whyCourtBot">
+    <h2>Why CourtBot?</h2>
     <article>
-      <h2>Why CourtBot?</h2>
+
       <br>
       <h4>LESS BUREAUCRACY</h4>
       <p class="lead">Around 25% of the people in Tulsa County Jail are waiting for their cases to be heard, costing taxpayers up to $25,000 per day.  When clients attend their court cases, more small fines are collected, and jail space is freed for more serious offenders.  Remembering to attend court can help break the cycle of fines and jail time.
@@ -197,7 +198,15 @@
         <h4>6. How often will I be reminded?</h4>
         <p>Currently, you will only be reminded once.</p>
       </div>
-
+      <div class="col-sm-6">
+        <h4>7. How do I unsubscribe?</h4>
+        <p></p>
+      </div>
+      <div class="col-sm-6">
+        <h4>8. How do I contact the people behind CourtBot?</h4>
+        <p>You can contact us at <a href="mailto:courtbotmuskogee@gmail.com">courtbotmuskogee@gmail.com.</a></p>
+      </div>
+      </div>
     </div>
 </section>
 <!--Credits-->
@@ -205,9 +214,9 @@
   <div class="container text-center">
     <h3>Brought to you by</h3>
     <br>
-    <img class="img-responsive img-center col-sm-8" src="images/cft.png" style="width: 200px"; padding>
-    <img class="img-responsive img-center col-sm-8" src="images/brigade.png" style="width: 250px">
-    <img class="img-responsive img-center col-sm-8" src="images/cfm.png" style="width: 200px">
+    <img class="img-responsive img-center col-sm-8" src="images/cft.png" alt="Code for Tulsa Logo" style="width: 200px">
+    <img class="img-responsive img-center col-sm-8" src="images/brigade.png" alt="Code for America Logo" style="width: 250px">
+    <img class="img-responsive img-center col-sm-8" src="images/cfm.png" alt="Code for Muskogee" style="width: 200px">
   </div>
 </section>
 <!--Footer-->
