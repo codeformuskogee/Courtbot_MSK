@@ -31,3 +31,9 @@ h2 {
     font-size: 5em;
     color: #3B5998;
 }
+
+@media(min-width: 1030px){
+    .jumbotron .col-sm-4.display-3 br{
+        display: none;
+    }
+}
