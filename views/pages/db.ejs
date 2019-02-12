@@ -12,8 +12,12 @@
 <h2>Database Results</h2>
 
 <ul>
-    <% results.forEach(function(r) { %>
-        <li><%= r.id %> - <%= r.name %></li>
+    <% [
+            {name:'Torie',age:15},
+            {name:'Ariana',age:17}
+        ].forEach(function(r) {
+    %>
+        <li><%= r.name %> - <%= r.age %></li>
     <% }); %>
 </ul>
 
